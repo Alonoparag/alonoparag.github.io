@@ -82,6 +82,16 @@ body {
     text-align: left;
   }
 }
+/*=====FOR SMALL MOBILE=====*/
+@media screen and (max-width: 375px){
+  .topnav>a.hnav.navbar-brand{
+    font-size:2em !important;
+    max-width: 200px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
 
 .sticky {
   position: fixed;
