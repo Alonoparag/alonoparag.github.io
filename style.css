@@ -5,8 +5,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
-.topnav>a.hnav .navbar-brand {
+/*=====HEADER BRAND=====*/
+#headeroverride {
   padding-left: 2%;
   color:#e6e6e6;
   font-family: 'Spirax', cursive;
@@ -15,7 +15,6 @@ body {
   display: inline-block;
   max-height: 57px;
 }
-
 
 .topnav {
     background-color: #6D5234;
