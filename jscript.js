@@ -6,6 +6,12 @@ function myFunctionResize() {
     x.className = "topnav";
   }
 }
+
+$("#myTopnav>div>a").not('.icon').on('click',function(){
+  $("#myTopnav").removeClass("responsive");
+  $('#myTopnav').addClass('topnav');
+});
+
 var nav = document.getElementById('myTopnav');
 window.onscroll = function(){
   if(window.pageYOffset > 50){
