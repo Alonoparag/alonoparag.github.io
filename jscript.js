@@ -6,6 +6,22 @@ function myFunctionResize() {
     x.className = "topnav";
   }
 }
+
+$("#myTopnav>div>a").not('.icon').on('click',function(){
+  $("#myTopnav").removeClass("responsive");
+  $('#myTopnav').addClass('topnav');
+});
+
+$(document).ready(function (){
+    $("#myTopnav>div>a").not('.icon').click(function (){
+      var toScroll = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(toScroll).offset().top
+        }, 1500);
+    });
+});
+
+
 var nav = document.getElementById('myTopnav');
 window.onscroll = function(){
   if(window.pageYOffset > 50){
