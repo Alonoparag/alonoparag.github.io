@@ -85,10 +85,29 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-
+/*====CONTENT BACKGROUND====*/
 .content {
   align-content: center;
   width: 60%;
   margin: auto;
   padding: 16px;
+}
+.content:nth-child(even){
+  background-color: rgba(109, 82, 52, 0.5);
+}
+
+.content:nth-child(odd){
+  background-color: rgba(110, 110, 53, 0.5);
+}
+
+p.box {
+  padding-top: 100px;
+}
+
+/*====FOOTER====*/
+
+footer {
+  width: 100%;
+  background-color: #6D5234;
+  padding-left: 5%;
 }
