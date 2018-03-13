@@ -1,174 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
   <script src="https://use.fontawesome.com/e37a52d88d.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <title>Lesson 5 - Working with the Anchor Tag</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <header>
-    <div id="navbar" class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <h1 class="hnav">
-          Alon Parag
-        </h1>
-          <h2 class="hnav">Design and Program</h2>
-        </div>
-        <div class="col-md-9">
-            <ul id="navlist">
-              <li class="navitem"><a class="navbutton" href="#home">Home</a></li>
-              <li class="navitem"><a class="navbutton" href="#lang">Languages</a></li>
-              <li class="navitem"><a class="navbutton" href="#cv">Curriculum Vitae</a></li>
-              <li class="navitem"><a class="navbutton" href="#projects" disabled>Projects</a></li>
-              <li class="navitem"><a class="navbutton" href="#testimonies" disabled>Testimonies</a></li>
-              <li class="navitem"><a class="navbutton" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-      </div>
+    <nav  id="myTopnav" class = "navbar navbar-expand-lg topnav">
+      <span class = "hnav navbar-brand" style = "  color:#e6e6e6; font-size: 3em;">Alon's Portfolio</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="topnav">
+      <a class = "active" href="#contact" >Contact</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#projects">Projects</a>
+      <a href="#home" class="active">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunctionResize()">&#9776;</a>
 
-      </div>
-  </header>
-  <!--Container--><div class="container">
-      <!-- Home --><div id="home" class="box1 row rowbody">
-        <div class="col-md-5">
-          <p>
-            <em>Lover of knowledge<br/>
-            An independent spirit<br/>
-              carrier of tasks</br>
-            Solver of problems</br></em><br/><br/>
-            My name is Alon, and you are here because you are curious about how I can benefit you.<br/>
-    I am a self taught programmer and designer.<br/>
-            I am always curious about possible<br/> collaboration on different projects, and I'm open for hiring.</br>
-            You are invited to <a href="#contact">contact me</a>, or to look at my projects and skills.
-          </p>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <img id="profile" class="img-fluid" src="https://i.imgur.com/W6nFWSA.png" alt="Alon Parag's profile picture">
-        </div>
-      </div>
-      <!--Languages--><div id="lang"  class="box2 row rowbody">
-        <div class="container">
-          <div class="row">
-            <div class="cold-md-4 langitem"><h3>HTML5</h3></div>
-            <div class="cold-md-4 langitem"><h3>CSS3</h3></div>
-            <div class="cold-md-4 langitem"><h3>Javascript</h3></div>
-          </div>
-          <div class="row">
-            <div class="cold-md-4 langitem badge"><img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered"></div>
-            <div class="cold-md-4 langitem badge"><img  src="http://code.naustud.io/code-guide/img/css-logo.svg" alt="C S S 3"></div>
-            <div class="cold-md-4 langitem"><img src="" alt="Javascript"></div>
-          </div>
-          <div class="row">
-            <div class="cold-md-4 langitem"><h3>Bootstrap</h3></div>
-            <div class="cold-md-4 langitem"><h3>jQuery</h3></div>
-            <div class="cold-md-4 langitem"><h3>Python</h3></div>
-          </div>
-          <div class="row">
-            <div class="cold-md-4 langitem"><img src="" alt="Bootstrap"></div>
-            <div class="cold-md-4 langitem"><img src="" alt="jQuery"></div>
-            <div class="cold-md-4 langitem"><img src="" alt="Python"></div>
-          </div>
-        </div>
-
-      </div>
-      <!-- CV --><div  id="cv" class="box1 row cv-container">
-        <div><h2>Curriculum Vitae</h2></div>
-        <div><h3 class="cv-header">Personal Data</h3>
-          <p>
-            <ul class="cv-list">
-            <li><strong>Name:</strong> Allon Parag</li>
-            <li><strong>Birth Date:</strong> 15th August 1990</li>
-            <li><strong>City of birth:</strong> Haifa, Israel.</li>
-            <li><strong>Citizenships:</strong> German, Canadian, Israeli</li>
-            <li><strong>Relationship Status:</strong> Single</li>
-            <li><strong>Current Address:</strong> Afarsemon 5 P.O.B 505, Ramat Yishay 30095, Israel.</li>
-            <li><strong>Mobile Number:</strong> +972-544-694-322</li>
-            <li><strong>Email Address:</strong> allon.parag@gmail.com</li>
-          </ul>
-        </p>
-      </div>
-        <div><p><h3 class="cv-header">Work Experience</h3>
-        <ul class="cv-list">
-          <li><strong>2017</strong></li>
-          <li><strong>2017-2018</strong>Line Coock at <em>Nadav Kinuchim</em></li>
-          <li><strong>2014-2016</strong>Studying German as a foreign language in Berlin</li>
-          <li><strong>2013-2014</strong> Guitar Teacher</li>
-          <li><strong>2012-2013</strong> Owner of A.D.P Roadside Assistance</li>
-          <li><strong>2012</strong> Barista at<em>Black Burger</em></li>
-          <li><strong>2009-2012</strong> Mandatory Military Service
-            <ul class="cvmilitary">
-              <li><strong>2011-2012</strong> Company Master Sergeant at <em>"Hadas Batallion"</em>, I.D.F Officers Academy ("Bahad 1")</li>
-              <li><strong>2010-2011</strong> Platoon sergeant (2nd in command) in the I.D.F Military Preparatory School at the Reali High School, Haifa</li>
-              <li><strong>2009-2010</strong> Airborne infantry and squad commander at the 35th Paratroopers Brigade</li>
-            </ul></li>
-          <li><strong>2008-2009</strong> Military leadership preparatory year at Maagan Michael</li>
-        </ul>
-      </p></div>
-        <div><p><h3 class="cv-header">Education</h3>
-        <ul class="cv-list">
-          <li><strong>2017</strong> Shopify and Facebook Advertising through a private course</li>
-          <li><strong>2016</strong> Received TestDAF Certificate (German Language Level C1)</li>
-          <li><strong>2010</strong> Certified as section leader by the I.D.F Infantry Command School</li>
-          <li><strong>2008</strong> Graduated Haémek Hamaáravi high school</li></ul>
-      </p></div>
-        <div><p><h3 class="cv-header">Personal Achievments</h3>
-        <ul class="cv-list">
-          <li>During 2017 I managed to teach myself Spanish and completed Chemistry and Microbiology courses at the Virtual University of Bavaria (4 credits each)</li>
-        </ul>
-      </p></div>
-        <div><p><h3 class="cv-header">Skills</h3>
-        <ul class="cv-list">
-          <li>Experienced with MS Office Word, Excel and Powerpoint.</li>
-          <li>Fluent in Hebrew, English, German Spanish.</li>
-          <li>Photographer</li>
-        </ul>
-      </p></div>
-        <div><p><h3 class="cv-header">Personality Traits</h3>
-        <ul class="cv-list">
-          <li>Objective Oriented</li>
-          <li>Skilled time manager</li>
-          <li>Disciplined</li>
-          <li>Self Motivated</li>
-          <li>Independent</li>
-          <li>High Work Ethic</li>
-          <li>Esteemed interperson</li>
-        </ul>
-      </p></div>
     </div>
-      <!-- Projects --><div id="projects"  class="box2 row rowbody"></div>
-      <!--Testimonies and Recommendations --><div id="testimonies" class="box1 row rowbody"></div>
-      <!-- Contact --><div class="box2 row rowbody">
-        <div class="contact-container">
-            <div><h3>Contact Information</h3></div>
-            <div>        <!-- Gmail -->
-              <button><a href="mailto:allon.parag@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>  Email</a></button>
-            </div>
-            <div>
-              <button> <a href="https://www.facebook.com/sunshine.allon"><i class="fa fa-facebook" aria-hidden="true"></i>  Facebook</a></button>        <!-- Facebook -->
-            </div>
-            <div><!-- Github -->
-              <button><a href="https://github.com/Alonoparag"><i class="fa fa-github" aria-hidden="true"></i>  Github</a></button>
-            </div>
-            <div><!-- LinkedIn -->
-              <button><a href="https://www.linkedin.com/in/alon-parag-930310152/"><i class="fa fa-linkedin" aria-hidden="true"></i>  Linkedin</a></button>
-            </div>
-          </div>
-        <div class="services-container">
-          <div><h3>Services</h3></div>
-          <div>site design</div>
-          <div>site maintenance</div>
-          <div>eCommerce optimization</div>
-          <div>Wordpress</div>
-          <div>Shopify store costumization</div>
-        </div>
-      </div>
-  <!--Container--></div>
-  <footer>Alon Parag© 2018. All Rights Reserved</footer>
+  </nav>
+  </header>
+
+  <div id="home" class = "content">
+    <p class = "box"><h2>The welcome will be here</h2>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Vitae suscipit tellus mauris a diam maecenas sed enim. Amet purus gravida quis blandit turpis cursus in. Condimentum mattis pellentesque id nibh tortor id aliquet. Et malesuada fames ac turpis. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. At tempor commodo ullamcorper a lacus vestibulum sed arcu. At risus viverra adipiscing at in tellus. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Vitae sapien pellentesque habitant morbi tristique.
+    </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <div id="projects" class = "content"><p class = "box">
+    <h2>The projects will be here </h2>
+    Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Egestas quis ipsum suspendisse ultrices gravida. Molestie a iaculis at erat pellentesque. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Eget velit aliquet sagittis id consectetur purus. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquet lectus proin nibh nisl condimentum. Vestibulum sed arcu non odio. Tellus at urna condimentum mattis pellentesque id nibh tortor id. Erat imperdiet sed euismod nisi. Mauris sit amet massa vitae tortor. Facilisi morbi tempus iaculis urna id volutpat. Neque egestas congue quisque egestas. Aliquam id diam maecenas ultricies mi eget.</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <div id="testimonials" class = "content">
+      <p class = "box"><h2>The testimonials will be here </h2>
+    Ipsum faucibus vitae aliquet nec ullamcorper. Dictum non consectetur a erat nam at. Molestie at elementum eu facilisis sed odio morbi quis commodo. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Id neque aliquam vestibulum morbi blandit cursus. Congue nisi vitae suscipit tellus mauris a diam. Viverra maecenas accumsan lacus vel. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Molestie at elementum eu facilisis sed odio morbi quis commodo. Habitant morbi tristique senectus et netus et. Nibh praesent tristique magna sit. Nibh tortor id aliquet lectus proin nibh nisl.</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <div id="contact" class = "content">
+    <p class = "box"><h2>The contact information will be here </h2>
+    Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Mauris cursus mattis molestie a iaculis. Orci porta non pulvinar neque laoreet. Eget duis at tellus at urna. Massa ultricies mi quis hendrerit dolor. Vitae nunc sed velit dignissim. Et magnis dis parturient montes. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Urna et pharetra pharetra massa massa ultricies. Turpis egestas integer eget aliquet nibh praesent. Dictum at tempor commodo ullamcorper a lacus vestibulum sed.</p>
+
+  </div>
+
+  <footer class = "content">Alon Parag© 2018. All Rights Reserved</footer>
+  <script src="jscript.js">
+  </script>
 </body>
+
 </html>
