@@ -29,13 +29,13 @@ $(document).on('scroll', function(){
   var scrollTop = $(document).scrollTop();
   var activeA;
   if (scrollTop < homeOffsetTop) {
-    activeA = $('.topnav>a:nth-child(4)');
+    activeA = $('.topnav>a:nth-child(2)');
   } else if (scrollTop < projectsOffsetTop) {
     activeA = $('.topnav>a:nth-child(3)');
   } else if (scrollTop < testimonialsOffsetTop) {
-    activeA = $('.topnav>a:nth-child(2)');
+    activeA = $('.topnav>a:nth-child(4)');
   } else if (scrollTop < contactOffsetTop) {
-    activeA = $('.topnav>a:nth-child(1)');
+    activeA = $('.topnav>a:nth-child(5)');
   }
   activeA.addClass('active');
   $('.topnav>a').not(activeA).removeClass('active');
