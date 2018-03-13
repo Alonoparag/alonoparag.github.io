@@ -18,10 +18,7 @@ window.onscroll = function(){
     box.style.top = 150;
   }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 020fdc2a2b053156bddc79742888cc3e26d0a8d3
 //============ACTIVE SCROLLING==========
 var homeOffsetTop = $('#home').offset().top;
 var projectsOffsetTop = $('#projects').offset().top;
