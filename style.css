@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 
-.topnav>a.hnav {
+.topnav>a.hnav .navbar-brand {
   padding-left: 2%;
   color:#e6e6e6;
   font-family: 'Spirax', cursive;
