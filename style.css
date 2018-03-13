@@ -34,6 +34,7 @@ body {
     padding: 10px 16px ;
     text-decoration: none;
     font-size: 25px;
+    background-color: #6D5234;
     }
 
 .topnav a:not(.hnav):hover {
