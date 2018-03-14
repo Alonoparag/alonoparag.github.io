@@ -4,18 +4,17 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
 }
-/*=====HEADER BRAND=====*/
-#headeroverride {
+
+.topnav>a.hnav {
   padding-left: 2%;
   color:#e6e6e6;
   font-family: 'Spirax', cursive;
   font-size: 2.5em;
   padding-bottom: 0;
   display: inline-block;
-  max-height: 57px;
 }
+
 
 .topnav {
     background-color: #6D5234;
@@ -35,7 +34,6 @@ body {
     padding: 10px 16px ;
     text-decoration: none;
     font-size: 25px;
-    background-color: #6D5234;
     }
 
 .topnav a:not(.hnav):hover {
@@ -83,36 +81,6 @@ body {
     text-align: left;
   }
 }
-/*=====FOR SMALL MOBILE=====*/
-@media screen and (max-width: 375px){
-
-  body{
-    background-image: url("images/background_xs.png") !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #dedeba;
-    font-weight: bold;
-
-  }
-
-  .topnav>a.hnav.navbar-brand{
-    font-size:2em !important;
-    max-width: 200px;
-    padding-right: 0;
-    margin-right: 0;
-  }
-
-  div.content {
-    align-content: center;
-    width: 85%;
-    margin: auto;
-    padding: 16px;
-  }
-
-}
-
 
 .sticky {
   position: fixed;
@@ -129,8 +97,6 @@ body {
   width: 60%;
   margin: auto;
   padding: 16px;
-  color: #dedeba;
-  font-weight: bold;
 }
 .content:nth-child(even){
   background-color: rgba(109, 82, 52, 0.5);

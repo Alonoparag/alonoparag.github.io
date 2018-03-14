@@ -4,18 +4,14 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
 }
-/*=====HEADER BRAND=====*/
-#headeroverride {
+
+.hnav {
   padding-left: 2%;
   color:#e6e6e6;
   font-family: 'Spirax', cursive;
-  font-size: 2.5em;
-  padding-bottom: 0;
-  display: inline-block;
-  max-height: 57px;
 }
+
 
 .topnav {
     background-color: #6D5234;
@@ -28,17 +24,16 @@ body {
 
 
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 10px 16px ;
     text-decoration: none;
     font-size: 25px;
-    background-color: #6D5234;
     }
 
-.topnav a:not(.hnav):hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -58,7 +53,7 @@ body {
 }
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -67,11 +62,8 @@ body {
 }
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
-  span.hnav .navbar-brand{
-
-  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -83,36 +75,6 @@ body {
     text-align: left;
   }
 }
-/*=====FOR SMALL MOBILE=====*/
-@media screen and (max-width: 375px){
-
-  body{
-    background-image: url("images/background_xs.png") !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #dedeba;
-    font-weight: bold;
-
-  }
-
-  .topnav>a.hnav.navbar-brand{
-    font-size:2em !important;
-    max-width: 200px;
-    padding-right: 0;
-    margin-right: 0;
-  }
-
-  div.content {
-    align-content: center;
-    width: 85%;
-    margin: auto;
-    padding: 16px;
-  }
-
-}
-
 
 .sticky {
   position: fixed;
@@ -123,31 +85,10 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-/*====CONTENT BACKGROUND====*/
+
 .content {
   align-content: center;
   width: 60%;
   margin: auto;
   padding: 16px;
-  color: #dedeba;
-  font-weight: bold;
-}
-.content:nth-child(even){
-  background-color: rgba(109, 82, 52, 0.5);
-}
-
-.content:nth-child(odd){
-  background-color: rgba(110, 110, 53, 0.5);
-}
-
-p.box {
-  padding-top: 100px;
-}
-
-/*====FOOTER====*/
-
-footer {
-  width: 100%;
-  background-color: #6D5234;
-  padding-left: 5%;
 }
