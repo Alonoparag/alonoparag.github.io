@@ -9,6 +9,10 @@ body {
 
 }
 /*=====HEADER BRAND=====*/
+header{
+  position:relative;
+  z-index:10;
+}
 #headeroverride {
   padding-left: 2%;
   color:#e6e6e6;
@@ -83,7 +87,6 @@ body {
     float: none;
     display: block;
     text-align: left;
-    z-index: 10000;
   }
 }
 /*=====FOR SMALL MOBILE=====*/
@@ -114,6 +117,7 @@ body {
     width: 85%;
     margin: auto;
     padding: 16px;
+    position: relative;
     z-index: 1;
   }
 
