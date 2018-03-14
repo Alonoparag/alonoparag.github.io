@@ -4,6 +4,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  color: #dedeba;
+  font-weight: bold
 
 }
 /*=====HEADER BRAND=====*/
@@ -86,6 +88,7 @@ body {
 /*=====FOR SMALL MOBILE=====*/
 @media screen and (max-width: 375px){
 
+
   body{
     background-image: url("images/background_xs.png") !important;
     background-repeat: no-repeat;
@@ -97,12 +100,14 @@ body {
 
   }
 
+
   .topnav>a.hnav.navbar-brand{
     font-size:2em !important;
     max-width: 200px;
     padding-right: 0;
     margin-right: 0;
   }
+
 
   div.content {
     align-content: center;
@@ -111,7 +116,7 @@ body {
     padding: 16px;
   }
 
-}
+
 
 
 .sticky {

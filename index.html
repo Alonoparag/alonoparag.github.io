@@ -6,16 +6,17 @@
   <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
   <script src="https://use.fontawesome.com/e37a52d88d.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alon's Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--navbar navbar-expand-lg-->
+<body id = "" data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <header>
-    <nav id="myTopnav" class="topnav">
+    <nav id="myTopnav" class="navbar navbar-expand-lg topnav">
       <div class="topnav">
       <a id = "headeroverride" class="hnav navbar-brand" style="display: inline-block;">Alon's Portfolio</a>
         <a href="#home">Home</a>
@@ -23,24 +24,41 @@
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunctionResize()">&#9776;</a>
+
       </div>
     </nav>
   </header>
 
-  <div id="home" class="content">
+  <div id="home" class="content container">
+    <div class = "row mobile">
+      <div class = "col-sm-4 text-center center-block" style="margin-right: 20px; margin-left: 20px;">
+        <em>Lover of knowledge<br/>
+        An independent spirit<br/>
+          carrier of tasks</br>
+        Solver of problems</br></em><br/><br/>
+      </div>
+    </div>
+    <div class = "row mobile">
+      <div class = "col-sm-12 pull-right" style = "padding-left:30%; padding-right:2%;">
+        My name is Alon, and you are here because you are curious about how I can benefit you.<br/>
+        I am a self taught programmer and designer.<br/>
+        I am always curious about possible<br/> collaboration on different projects, and I'm open for hiring.</br>
+        You are invited to <a href="#contact">contact me</a>, or to look at my projects and skills.
+      </div>
+    </div>
+    <div class = "row media mobile">\
+      <div class = "col-sm-4 media-object">
+        <img class="img-responsive" src="images/profile_small.png" alt = "profile picture" style = "max-width: 260px;" >
+      </div>
+    </div>
     <p class="box">
-      <h2>The welcome will be here</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Vitae suscipit tellus mauris a diam maecenas sed enim. Amet
-      purus gravida quis blandit turpis cursus in. Condimentum mattis pellentesque id nibh tortor id aliquet. Et malesuada fames ac turpis. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. At tempor commodo ullamcorper a lacus
-      vestibulum sed arcu. At risus viverra adipiscing at in tellus. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Vitae sapien pellentesque habitant morbi tristique.
-    </p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
   </div>
   <div id="projects" class="content">
     <p class="box">
       <h2>The projects will be here </h2> Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Egestas quis ipsum suspendisse ultrices gravida. Molestie a iaculis at erat pellentesque. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Eget velit aliquet sagittis
       id consectetur purus. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquet lectus proin nibh nisl condimentum. Vestibulum sed arcu non odio. Tellus at urna condimentum mattis pellentesque id nibh tortor id. Erat imperdiet sed
       euismod nisi. Mauris sit amet massa vitae tortor. Facilisi morbi tempus iaculis urna id volutpat. Neque egestas congue quisque egestas. Aliquam id diam maecenas ultricies mi eget.</p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
   <div id="testimonials" class="content">
     <p class="box">
