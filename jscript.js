@@ -56,3 +56,12 @@ $(document).on('scroll', function(){
   activeA.addClass('active');
   $('.topnav>a').not(activeA).removeClass('active');
 });
+// =====CONTACT ONCLICK COLOR CHANGE=====
+$(document).ready(function(){
+  $('#contact>.mobile>.icon>.media-object>a').on('mouseenter', function(){
+    $('svg>.outline', this).attr('fill', 'rgb(0, 0, 0)');
+  });
+  $('#contact>.mobile>.icon>.media-object>a').on('mouseleave', function(){
+    $('svg>.outline', this).attr('fill', 'rgb(222,222,186)');
+  });
+});

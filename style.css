@@ -132,6 +132,11 @@ body {
     max-width:25px;
   }
 
+  svg.icon {
+    max-height:25px;
+    max-width:25px;
+  }
+
 }
 
 
