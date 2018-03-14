@@ -4,6 +4,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
 }
 /*=====HEADER BRAND=====*/
 #headeroverride {
@@ -84,12 +85,32 @@ body {
 }
 /*=====FOR SMALL MOBILE=====*/
 @media screen and (max-width: 375px){
+
+  body{
+    background-image: url("images/background_xs.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #dedeba;
+    font-weight: bold;
+
+  }
+
   .topnav>a.hnav.navbar-brand{
     font-size:2em !important;
     max-width: 200px;
     padding-right: 0;
     margin-right: 0;
   }
+
+  div.content {
+    align-content: center;
+    width: 85%;
+    margin: auto;
+    padding: 16px;
+  }
+
 }
 
 
@@ -108,6 +129,8 @@ body {
   width: 60%;
   margin: auto;
   padding: 16px;
+  color: #dedeba;
+  font-weight: bold;
 }
 .content:nth-child(even){
   background-color: rgba(109, 82, 52, 0.5);
