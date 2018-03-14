@@ -117,12 +117,19 @@ body {
   }
 
   #contact>.mobile>.icon{
-    max-width:60px;
+    max-width:80px;
+  }
+
+  #contact>.mobile>.icon>.media-object>a{
+    max-height:25px;
+    max-width:25px;
+    height:25px;
+    width:25px;
   }
 
   img.icon {
     max-height:25px;
-    max-width:25px
+    max-width:25px;
   }
 
 }
