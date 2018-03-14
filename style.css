@@ -83,6 +83,7 @@ body {
     float: none;
     display: block;
     text-align: left;
+    z-index: 10000;
   }
 }
 /*=====FOR SMALL MOBILE=====*/
@@ -90,7 +91,6 @@ body {
 
 
   body{
-    background-image: url("images/background_xs.png") !important;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -114,6 +114,7 @@ body {
     width: 85%;
     margin: auto;
     padding: 16px;
+    z-index: 1;
   }
 
   #contact>.mobile>.icon{
