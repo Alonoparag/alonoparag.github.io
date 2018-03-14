@@ -4,11 +4,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-<<<<<<< HEAD
   color: #dedeba;
   font-weight: bold
-=======
->>>>>>> 3360d01d25f48840fed4a2c3242992531f922b62
 
 }
 /*=====HEADER BRAND=====*/
@@ -119,6 +116,16 @@ body {
     padding: 16px;
   }
 
+  #contact>.mobile>.icon{
+    max-width:60px;
+  }
+
+  img.icon {
+    max-height:25px;
+    max-width:25px
+  }
+
+}
 
 
 
@@ -140,11 +147,11 @@ body {
   color: #dedeba;
   font-weight: bold;
 }
-.content:nth-child(even){
+div.content:nth-child(even){
   background-color: rgba(109, 82, 52, 0.5);
 }
 
-.content:nth-child(odd){
+div.content:nth-child(odd){
   background-color: rgba(110, 110, 53, 0.5);
 }
 
