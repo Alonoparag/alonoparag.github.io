@@ -56,6 +56,23 @@ $(document).on('scroll', function(){
   activeA.addClass('active');
   $('.topnav>a').not(activeA).removeClass('active');
 });
+// =====TOGGLE CONTACT DESKTOP\MOBILE=====
+function checksize(){
+  if ($(".topnav>a.hnav.navbar-brand").css("font-size") != "2em"){
+    $("#contact>div.mobile").hide();
+  } else if ($(".topnav>a.hnav.navbar-brand").css("font-size") == "2em"){
+    $("#contact>div.desktop").hide();
+  }
+}
+
+$(document).ready(function(){
+  checksize();
+
+  $(window).resize(checksize());
+});
+
+
+
 // =====CONTACT ONCLICK COLOR CHANGE=====
 $(document).ready(function(){
   $('#contact>.mobile>.icon>.media-object>a').on('mouseenter', function(){
@@ -64,4 +81,31 @@ $(document).ready(function(){
   $('#contact>.mobile>.icon>.media-object>a').on('mouseleave', function(){
     $('svg>.outline', this).attr('fill', 'rgb(222,222,186)');
   });
+  // =====DESKTOP=====
+  // $('#contact>.desktop>.media>.media-object>a>svg').mouseenter(function(){
+  //   $('svg>.outline', this).append('<animate id="an" attributeName="fill" attributeType="CSS" from="rgb(222,222,186)" to="skyblue" begin="0s" dur="0.8s" repeatcount = "1" />');
+  // });
+  // $('#contact>.mobile>.icon>.media-object>a>svg').mouseleave(function(){
+  //   $("animate").remove('#an');
+  // });
+
+  $("#contact>.desktop>.media>.media-object>a>svg").mouseenter(function() {
+    var idA = $(this).attr('id');
+    var animate = document.createElementNS("http://www.w3.org/2000/svg", 'animate');
+
+    animate.setAttribute("id", "an");
+    animate.setAttribute("attributeName", "fill");
+    animate.setAttribute("attributeType", "CSS");
+    animate.setAttribute("from", "rgb(222,222,186");
+    animate.setAttribute("to", "black");
+    animate.setAttribute("begin", "0s");
+    animate.setAttribute("dur", "3s");
+    animate.setAttribute("fill", "freeze");
+    var outline = this.getElementsByClassName("outline")[0];
+    outline.appendChild(animate);
+  });
+  $("#contact>.desktop>.media>.media-object>a>svg").mouseleave(function() {
+    $("svg>path").empty();
+  });
+
 });

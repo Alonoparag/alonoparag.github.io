@@ -62,7 +62,48 @@ header{
 .topnav .icon {
     display: none;
 }
+/* =====CONTACT ICONS===== */
 
+.desktop>.media>div>a>.icon{
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.desktop>.media>div>.icon{
+  max-height: 50px;
+  max-width: 560px;
+}
+/* =====CONTACT ICONS ROTATE===== */
+@keyframes rotate{
+  from{
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to{
+    -ms-transform: rotate(1800deg);
+    -webkit-transform: rotate(1800deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes rotate{
+  from{
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to{
+    -ms-transform: rotate(1800deg);
+    -webkit-transform: rotate(1800deg);
+    transform: rotate(180deg);
+  }
+}
+
+div.desktop>.media>.media-object>a>svg:hover{
+    animation-name:rotate;
+    animation-duration:2s;
+}
 
 @media screen and (max-width: 860px) {
   .topnav a:not(:first-child) {display: none;}
