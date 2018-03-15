@@ -131,7 +131,7 @@ div.desktop>.media>.media-object>a>svg:hover{
   }
 }
 /*=====FOR SMALL MOBILE=====*/
-@media screen and (max-width: 375px){
+@media screen and (max-width:860px){
 
   #home>div>div>img{
     max-width: 100px;
