@@ -58,17 +58,21 @@ $(document).on('scroll', function(){
 });
 // =====TOGGLE CONTACT DESKTOP\MOBILE=====
 function checksize(){
-  if ($(".topnav>a.hnav.navbar-brand").css("font-size") != "2em"){
+  if ($(".topnav>a.hnav.navbar-brand").css("font-size") != "32px"){
     $("#contact>div.mobile").hide();
-  } else if ($(".topnav>a.hnav.navbar-brand").css("font-size") == "2em"){
+    $("#contact>div.desktop").show();
+
+  } else if ($(".topnav>a.hnav.navbar-brand").css("font-size") == "32px"){
     $("#contact>div.desktop").hide();
+    $("#contact>div.mobile").show();
+
   }
 }
 
 $(document).ready(function(){
   checksize();
-
   $(window).resize(checksize());
+
 });
 
 
@@ -81,14 +85,7 @@ $(document).ready(function(){
   $('#contact>.mobile>.icon>.media-object>a').on('mouseleave', function(){
     $('svg>.outline', this).attr('fill', 'rgb(222,222,186)');
   });
-  // =====DESKTOP=====
-  // $('#contact>.desktop>.media>.media-object>a>svg').mouseenter(function(){
-  //   $('svg>.outline', this).append('<animate id="an" attributeName="fill" attributeType="CSS" from="rgb(222,222,186)" to="skyblue" begin="0s" dur="0.8s" repeatcount = "1" />');
-  // });
-  // $('#contact>.mobile>.icon>.media-object>a>svg').mouseleave(function(){
-  //   $("animate").remove('#an');
-  // });
-
+// =====DESKTOP COLOR ANIMATION ON HOVER=====
   $("#contact>.desktop>.media>.media-object>a>svg").mouseenter(function() {
     var idA = $(this).attr('id');
     var animate = document.createElementNS("http://www.w3.org/2000/svg", 'animate');
