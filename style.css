@@ -133,6 +133,10 @@ div.desktop>.media>.media-object>a>svg:hover{
 /*=====FOR SMALL MOBILE=====*/
 @media screen and (max-width: 375px){
 
+  #home>div>div>img{
+    max-width: 100px;
+    max-height: 100px;
+  }
 
   body{
     background-repeat: no-repeat;
